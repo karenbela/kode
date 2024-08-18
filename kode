@@ -1,0 +1,37 @@
+using System;
+
+namespace operatorsederhana
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Masukkan Nilai a: ");
+            int a = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Masukkan Nilai b: ");
+            int b = Convert.ToInt16(Console.ReadLine());
+
+            int c = a + b;
+
+            int d = a - b;
+
+            int e = a * b;
+
+            double f = (double)a / b;
+
+            Console.WriteLine("c = hasil pertambahan a + b adalah " + c);
+            Console.WriteLine("d = hasil pengurangan a - b adalah " + d);
+            Console.WriteLine("e = hasil perkalian a x b adalah " + e);
+            Console.WriteLine("f = hasil pembagian a : b adalah " + f);
+            Console.WriteLine("maka c < e adalah " + (c < e));
+            Console.WriteLine("maka c > e adalah " + (c > e));
+            Console.WriteLine("maka d <= f adalah " + (d <= f));
+            Console.WriteLine("maka d >= f adalah " + (d >= f));
+            Console.WriteLine("maka c = e adalah " + (c == e));
+            Console.WriteLine("maka d != f adalah " + (d != f));
+            
+            Console.ReadLine();
+        }
+    }
+}
